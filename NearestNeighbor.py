@@ -4,7 +4,7 @@ Created on Tue Jan 17 13:41:10 2017
 
 """
 import numpy as np
-
+#new code
 class NearestNeighbor(object):
     #http://cs231n.github.io/classification/
     def __init__(self):
@@ -31,5 +31,5 @@ class NearestNeighbor(object):
                 distances = np.sqrt(np.sum(np.square(self.Xtr - X[i,:]), axis = 1))
             min_index = np.argmin(distances) # get the index with smallest distance
             Ypred[i] = self.ytr[min_index] # predict the label of the nearest example
-    
+
         return Ypred
